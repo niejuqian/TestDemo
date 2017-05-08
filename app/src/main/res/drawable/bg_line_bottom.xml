@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 下层背景（边框的颜色） -->
+    <item>
+        <shape>
+            <solid android:color="#f00"/>
+        </shape>
+    </item>
+    <!--上层背景(View的背景色) -->
+    <!--可以指定：bottom-下、top-上、left-左、right-右，值大小即为边框宽度 -->
+    <item android:bottom="10dp">
+        <shape>
+            <solid android:color="#fff"/>
+        </shape>
+    </item>
+</layer-list>

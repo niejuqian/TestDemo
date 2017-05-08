@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <fragment
+        android:id="@+id/new_title_fragment"
+        android:name="com.testdemo.news.fragment.NewsTitleFragment"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="match_parent"/>
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <fragment
+            android:id="@+id/news_content_fragment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.testdemo.news.fragment.NewsContentFragment"/>
+    </FrameLayout>
+</LinearLayout>

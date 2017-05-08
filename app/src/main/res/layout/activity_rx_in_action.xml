@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ope_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/group_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="分组"/>
+        <Button
+            android:id="@+id/no_group_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="不分组"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/state_tv"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center_vertical|center"
+        android:layout_alignParentBottom="true"
+        android:text="系统应用：0   第三方应用：0"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/ope_layout"
+        android:layout_above="@id/state_tv"
+        android:id="@+id/applications_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

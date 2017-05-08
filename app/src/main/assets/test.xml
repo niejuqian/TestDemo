@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<persons>
+    <person>
+        <name>小王</name>
+        <age>18</age>
+    </person>
+    <person>
+        <name>小六</name>
+        <age>19</age>
+    </person>
+    <person>
+        <name>老朱</name>
+        <age>65</age>
+    </person>
+    <personment>
+        <name>mimi</name>
+        <age>16</age>
+    </personment>
+</persons>

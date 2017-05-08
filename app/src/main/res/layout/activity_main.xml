@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.testdemo.view.MyButton
+                style="@style/myButtonStyle"
+                app:className="com.testdemo.md.MaterialDesignActivity"
+                android:text="MaterialDesign"/>
+
+            <com.testdemo.view.MyButton
+                style="@style/myButtonStyle"
+                app:className="com.testdemo.map.BaiduMapActivity"
+                android:text="百度地图"/>
+
+            <com.testdemo.view.MyButton
+                style="@style/myButtonStyle"
+                app:className="com.testdemo.myservice.ServiceActivity"
+                android:text="服务"/>
+
+            <com.testdemo.view.MyButton
+                style="@style/myButtonStyle"
+                app:className="com.testdemo.network.NetworkActivity"
+                android:text="网络请求"/>
+
+            <com.testdemo.view.MyButton
+                style="@style/myButtonStyle"
+                app:className="com.testdemo.camera.MedioMainActivity"
+                android:text="多媒体"/>
+
+            <com.testdemo.view.MyButton
+                style="@style/myButtonStyle"
+                app:className="com.testdemo.rxjava.RxJavaActivity"
+                android:id="@+id/rx_btn"
+                android:text="rx学习"/>
+
+
+            <com.testdemo.view.MyButton
+                style="@style/myButtonStyle"
+                app:className="com.testdemo.webview.WebViewActivity"
+                android:id="@+id/webview_btn"
+                android:text="webview学习"/>
+
+
+            <com.testdemo.view.MyButton
+                style="@style/myButtonStyle"
+                app:className="com.testdemo.progress.ProgressActivity"
+                android:id="@+id/progress_btn"
+                android:text="进度条"/>
+
+
+            <com.testdemo.view.MyButton
+                style="@style/myButtonStyle"
+                app:className="com.testdemo.retrofit.RetrofitActivity"
+                android:id="@+id/retrofit_btn"
+                android:text="retrofit学习"/>
+
+            <com.testdemo.view.MyButton
+                style="@style/myButtonStyle"
+                app:className="com.testdemo.permission.PermissionActivity"
+                android:id="@+id/permission_btn"
+                android:text="运行时权限"/>
+
+            <com.testdemo.view.MyButton
+                style="@style/myButtonStyle"
+                app:className="com.testdemo.other.WebViewActivity"
+                android:id="@+id/keyboard_btn"
+                android:text="输入法测试"/>
+
+            <com.testdemo.view.MyButton
+                style="@style/myButtonStyle"
+                app:className="com.testdemo.cache.CacheActivity"
+                android:id="@+id/cache_btn"
+                android:text="缓存"/>
+
+            <com.testdemo.view.MyButton
+                style="@style/myButtonStyle"
+                app:className="com.testdemo.other.FullScreenActivity"
+                android:id="@+id/set_full_screen_btn"
+                android:text="全屏切换"/>
+
+            <com.testdemo.view.MyButton
+                style="@style/myButtonStyle"
+                app:className="com.testdemo.animation.GifActivity"
+                android:id="@+id/show_gif_btn"
+                android:text="显示GIF图片"/>
+
+            <com.testdemo.view.MyButton
+                style="@style/myButtonStyle"
+                app:className="com.testdemo.animation.AnimationMainActivity"
+                android:id="@+id/animation_btn"
+                android:text="动画"/>
+
+            <com.testdemo.view.MyButton
+                style="@style/myButtonStyle"
+                app:className="com.testdemo.other.DataActivity"
+                android:id="@+id/data_btn"
+                android:text="数据操作"/>
+
+            <com.testdemo.view.MyButton
+                style="@style/myButtonStyle"
+                app:className="com.testdemo.recyclerview.RecyclerviewActivity"
+                android:id="@+id/recyclerview_btn"
+                android:text="RecyclerView操作"/>
+
+            <com.testdemo.view.MyButton
+                style="@style/myButtonStyle"
+                app:className="com.testdemo.news.activity.NewsMainActivity"
+                android:id="@+id/fragment_btn"
+                android:text="fragment练习"/>
+
+            <com.testdemo.view.MyButton
+                style="@style/myButtonStyle"
+                app:className="com.testdemo.share.MainActivity"
+                android:id="@+id/share_btn"
+                android:text="tencent分享"/>
+
+            <com.testdemo.view.MyButton
+                style="@style/myButtonStyle"
+                app:className="com.testdemo.broadcast.MyBroadcastActivity"
+                android:id="@+id/broadcast_btn"
+                android:layout_marginBottom="10dp"
+                android:text="广播"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

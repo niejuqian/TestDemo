@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/call_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="拨打电话"/>
+    <com.testdemo.view.MyButton
+        android:text="读取联系人案例"
+        app:className="com.testdemo.permission.ContactActivity"
+        style="@style/myButtonStyle"/>
+
+</LinearLayout>
