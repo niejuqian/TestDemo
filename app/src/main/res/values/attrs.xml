@@ -3,4 +3,18 @@
     <declare-styleable name="MyButton">
         <attr name="className" format="string"/>
     </declare-styleable>
+    <declare-styleable name="CircleProgressBar">
+        <!--  圆边框颜色-->
+        <attr name="roundBackground" format="color"/>
+        <!--  进度条颜色-->
+        <attr name="progressBackground" format="color"/>
+        <!-- 半径-->
+        <attr name="circleRadius" format="float"/>
+        <!-- 当前进度-->
+        <attr name="progress" format="float" />
+        <!-- 最大值-->
+        <attr name="max" format="float"/>
+        <!-- 圆边框宽度-->
+        <attr name="storkeWidth" format="float"/>
+    </declare-styleable>
 </resources>

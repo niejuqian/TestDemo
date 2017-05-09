@@ -15,6 +15,16 @@
 
             <com.testdemo.view.MyButton
                 style="@style/myButtonStyle"
+                app:className="com.testdemo.seniorui.SeniorUiDrawActivity"
+                android:text="高级UI绘制"/>
+
+            <com.testdemo.view.MyButton
+                style="@style/myButtonStyle"
+                app:className="com.testdemo.auth.UMShareActivity"
+                android:text="第三方授权登录"/>
+
+            <com.testdemo.view.MyButton
+                style="@style/myButtonStyle"
                 app:className="com.testdemo.md.MaterialDesignActivity"
                 android:text="MaterialDesign"/>
 

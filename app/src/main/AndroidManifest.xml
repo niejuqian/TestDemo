@@ -35,6 +35,11 @@
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="DzcbrK4kX7M2lOEb1uAAyb4WHlqBYadF" />
+        <!--友盟 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="591127a3f5ade43b43000b0a" >
+        </meta-data>
         <provider
             android:authorities="${applicationId}.provider"
             android:name="android.support.v4.content.FileProvider"
@@ -86,6 +91,8 @@
             android:theme="@style/ActivityTheme"/>
         <activity android:name=".md.FruitDetailActivity"
             android:theme="@style/fruitTheme"/>
+        <activity android:name=".auth.UMShareActivity"/>
+        <activity android:name=".seniorui.SeniorUiDrawActivity"/>
 
         <!-- QQ分享 -->
         <activity android:name=".share.MainActivity"/>
@@ -108,6 +115,28 @@
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="behind"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 友盟 QQ第三方授权登录 start -->
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent1106078465" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+        <!-- 友盟 QQ第三方授权登录 end -->
+
+
         <receiver android:name=".notification.NotificationReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
