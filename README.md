@@ -7,4 +7,6 @@
 5.集成了recyclerview使用<br/>
 6.集成了部分material design设计中的部分组件使用<br/>
 7.集成友盟社会化组件-QQ分享<br/>
-8.自定义View-圆形进度控件<br/>
+8.使用okhttp实现断点续传<br/>
+9.自定义View-圆形进度控件<br/>
+10.自定义View-流式布局<br/>

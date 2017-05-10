@@ -93,6 +93,7 @@
             android:theme="@style/fruitTheme"/>
         <activity android:name=".auth.UMShareActivity"/>
         <activity android:name=".seniorui.SeniorUiDrawActivity"/>
+        <activity android:name=".seniorui.FlowLayoutActivity"/>
 
         <!-- QQ分享 -->
         <activity android:name=".share.MainActivity"/>

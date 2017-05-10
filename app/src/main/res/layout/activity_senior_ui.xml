@@ -4,11 +4,23 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
-    <Button
-        android:id="@+id/circ_progress_bar_btn"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="圆形进度条"/>
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/circ_progress_bar_btn"
+            style="@style/myButtonStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="圆形进度条"/>
+        <com.testdemo.view.MyButton
+            style="@style/myButtonStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            app:className="com.testdemo.seniorui.FlowLayoutActivity"
+            android:text="流式布局"/>
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
@@ -19,10 +31,10 @@
             android:id="@+id/my_circle_progress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:circleRadius="150"
-            app:storkeWidth="30"
+            app:circleRadius="120"
+            app:storkeWidth="40"
             app:max="300"
-            app:progress="120"
+            app:progress="95"
             app:roundBackground="#80666666"
             app:progressBackground="#666666"/>
     </LinearLayout>

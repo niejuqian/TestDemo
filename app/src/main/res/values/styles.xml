@@ -122,4 +122,14 @@
         <item name="android:elevation">4dip</item>
         <item name="android:gravity">center_vertical|center</item>
     </style>
+
+    <style name="flowTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/flow_text_bg_shape</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
 </resources>
