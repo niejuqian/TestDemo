@@ -17,4 +17,7 @@
         <!-- 圆边框宽度-->
         <attr name="storkeWidth" format="float"/>
     </declare-styleable>
+    <declare-styleable name="waterFall">
+        <attr name="columnCount" format="integer"/>
+    </declare-styleable>
 </resources>

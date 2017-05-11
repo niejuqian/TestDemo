@@ -94,6 +94,8 @@
         <activity android:name=".auth.UMShareActivity"/>
         <activity android:name=".seniorui.SeniorUiDrawActivity"/>
         <activity android:name=".seniorui.FlowLayoutActivity"/>
+        <activity android:name=".seniorui.PaintUseActivity"/>
+        <activity android:name=".seniorui.WaterFallActivity"/>
 
         <!-- QQ分享 -->
         <activity android:name=".share.MainActivity"/>
