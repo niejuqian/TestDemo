@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.common.cache.CacheLoader;
+import com.common.cache.CacheStrateEnum;
+import com.testdemo.entity.Person;
 import com.testdemo.other.ACache;
 import com.testdemo.BaseAppCompatActivity;
 import com.testdemo.R;
@@ -38,10 +41,13 @@ public class CacheActivity extends BaseAppCompatActivity {
     ACache aCache;
     private static String KEY = "key";
     public static String CONTENT_NORMAL = "我是内容";
+    CacheLoader cacheLoader;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState, R.layout.activity_cache);
+        cacheLoader = CacheLoader.builder().setCacheStrate(CacheStrateEnum.MEMORY).setCacheTime(20);
         aCache = ACache.get(this);
+        setListener();
     }
 
     private void setListener(){
@@ -70,7 +76,12 @@ public class CacheActivity extends BaseAppCompatActivity {
     public String getContent(){
         try {
             //return CacheManger.getInstance().get(KEY);
-            return aCache.getAsString(KEY);
+            //return aCache.getAsString(KEY);
+            Person person = cacheLoader.get(KEY);
+            if (null != person) {
+                return person.toString();
+            }
+            return "已经过期了";
         }catch (Exception e) {
             Log.e("MainActivity","异常鸟：" + e.getMessage());
         }
@@ -82,7 +93,9 @@ public class CacheActivity extends BaseAppCompatActivity {
             String content = CONTENT_NORMAL + random.nextInt(200);
             Log.e("MainActivity", "设置内容：" + content);
             //CacheManger.getInstance().put(KEY, content , 1000 * 60);
-            aCache.put(KEY, content, 60);
+            //aCache.put(KEY, content, 60);
+            Person person = new Person("Jack",18);
+            cacheLoader.put(KEY,person,10);
         }catch (Exception e) {
             Log.e("MainActivity", "设置内容异常鸟：" + e.getMessage());
         }

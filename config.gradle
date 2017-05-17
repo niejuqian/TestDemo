@@ -7,4 +7,14 @@ ext{
     VERSION_CODE=1
     VERSION_NAME="1.0.1"
     SWIPE_CAPTCHA_VERSION="V1.0.0"
+
+    libraries = [
+        appcompatV7   : "23.4.0",
+        recyclerviewV7  : "24.2.1"
+    ]
+
+    presentationDependencies = [
+            appcompatV7 : "com.android.support:appcompat-v7:${libraries.appcompatV7}",
+            recyclerviewV7 : "com.android.support:recyclerview-v7:${libraries.recyclerviewV7}"
+    ]
 }
