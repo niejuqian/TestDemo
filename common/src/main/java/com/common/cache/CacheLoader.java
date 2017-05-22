@@ -26,10 +26,21 @@ public class CacheLoader {
         return cacheLoader;
     }
 
+    /**
+     * 设置默认缓存时间
+     * @param cacheTime
+     * @return
+     */
     public CacheLoader setCacheTime(long cacheTime) {
         this.DEFAULT_CACHE_TIME = cacheTime;
         return this;
     }
+
+    /**
+     * 设置缓存策略
+     * @param strate 缓存策略枚举
+     * @return
+     */
     public CacheLoader setCacheStrate(CacheStrateEnum strate) {
         this.strateEnum = strate;
         return this;

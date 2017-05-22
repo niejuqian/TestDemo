@@ -12,6 +12,15 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+            <com.testdemo.view.MyButton
+                style="@style/myButtonStyle"
+                app:className="com.testdemo.mulitthread.MulitThreadActivity"
+                android:text="多线程通信"/>
+
+            <com.testdemo.view.MyButton
+                style="@style/myButtonStyle"
+                app:className="com.testdemo.mvppattern.ArticlesActivity"
+                android:text="MVP模式"/>
 
             <com.testdemo.view.MyButton
                 style="@style/myButtonStyle"

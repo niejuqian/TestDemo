@@ -96,6 +96,8 @@
         <activity android:name=".seniorui.FlowLayoutActivity"/>
         <activity android:name=".seniorui.PaintUseActivity"/>
         <activity android:name=".seniorui.WaterFallActivity"/>
+        <activity android:name=".mvppattern.ArticlesActivity"/>
+        <activity android:name=".mulitthread.MulitThreadActivity"/>
 
         <!-- QQ分享 -->
         <activity android:name=".share.MainActivity"/>
