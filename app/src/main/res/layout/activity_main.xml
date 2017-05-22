@@ -14,6 +14,11 @@
             android:orientation="vertical">
             <com.testdemo.view.MyButton
                 style="@style/myButtonStyle"
+                app:className="com.testdemo.seniorui.MulitActivity"
+                android:text="自定义UI"/>
+
+            <com.testdemo.view.MyButton
+                style="@style/myButtonStyle"
                 app:className="com.testdemo.mulitthread.MulitThreadActivity"
                 android:text="多线程通信"/>
 

@@ -9,7 +9,7 @@ ext{
     SWIPE_CAPTCHA_VERSION="V1.0.0"
 
     libraries = [
-        appcompatV7   : "23.4.0",
+        appcompatV7   : "24.2.1",
         recyclerviewV7  : "24.2.1"
     ]
 
